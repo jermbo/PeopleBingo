@@ -1,0 +1,34 @@
+{
+  "name": "peoplebingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermbo/PeopleBingo.git"
+  },
+  "author": "Jermbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jermbo/PeopleBingo/issues"
+  },
+  "homepage": "https://github.com/jermbo/PeopleBingo#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-task-listing": "^1.0.1",
+    "yargs": "^6.6.0"
+  }
+}

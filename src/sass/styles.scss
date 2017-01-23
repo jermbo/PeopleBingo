@@ -1,0 +1,28 @@
+table{
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td{
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  
+  &:nth-child(even){
+    background: #e5e5e5;
+  }
+}
+
+th{
+  border: 2px solid black;
+  width: 150px;
+  height: 75px;
+  background: #2e2e2e;
+  color: #f5e23d;
+  font-size: 1.5em;
+}
+
+.freeSpace{
+  background: #f5e23d;
+}
