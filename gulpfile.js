@@ -73,7 +73,7 @@ gulp.task('dev-images', () => {
 });
 
 gulp.task('dev-watch', ['dev-server'], () => {
-  gulp.watch(config.styles.source + '/**/*.less', ['dev-styles']);
+  gulp.watch(config.styles.source, ['dev-styles']);
   gulp.watch(config.html.source, ['dev-html', 'dev-bsReload']);
   gulp.watch(config.scripts.source, ['dev-scripts', 'dev-bsReload']);
   gulp.watch(config.images.source, ['images', 'bsReload']);
