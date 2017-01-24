@@ -31,39 +31,35 @@ function stamp(e) {
   // console.log(this.classList.contains('stamped'))
   if (!this.classList.contains('stamped')) this.className += ' stamped';
   matrix[data[0]][data[1]] = 1;
-  console.table(matrix);
+  // console.table(matrix);
   arenaSweep();
 }
 
-//  http://stackoverflow.com/questions/21011011/multi-dimensional-array-check-for-diagonal-consecutive-values
+// http://stackoverflow.com/questions/21011011/multi-dimensional-array-check-for-diagonal-consecutive-values
 function arenaSweep() {
-  var win = 5;
-  var length = 5;
-  var r = 0;
-  var c = 0;
-  var dr = 0;
-  var dl = 0;
-
-  for (var i = 0; i < length; i++) {
-
-    for (var j = 0; j < length; j++) {
+  var win = 5,
+    len = 5,
+    r = 0,
+    c = 0,
+    dr = 0,
+    dl = 0;
+  for (var i = 0; i < len; i++) {
+    for (var j = 0; j < len; j++) {
       (matrix[j][i] === 1) ? c++ : c = 0;
       (matrix[i][j] === 1) ? r++ : r = 0;
-
-      if (matrix[i][j] === 1 && i < length) {
+      if (matrix[i][j] === 1 && i < len - win + 1) {
         dr = 0;
         dl = 0;
-
-        for (var z = 0; z < length; z++) {
+        for (var z = 0; z < win; z++) {
           (matrix[i + z][j + z] === 1) ? dr++ : dr = 0;
           (matrix[i + z][j - z] === 1) ? dl++ : dl = 0;
         }
       }
       if (c === win || r === win || dr === win || dl === win) {
-        alert("YOU WIN!");
+        alert('BINGO');
         return true;
       }
-      r = 0;
     }
+    r = 0;
   }
 }
