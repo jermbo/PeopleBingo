@@ -49,6 +49,7 @@ gulp.task('dev-styles', () => {
 gulp.task('dev-scripts', () => {
   return gulp
     .src(config.scripts.source)
+    .pipe($.babel())
     .pipe($.changed(config.scripts.build))
     .pipe(gulp.dest(config.scripts.build));
 });
