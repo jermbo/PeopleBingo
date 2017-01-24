@@ -1,0 +1,1 @@
+var bingo = new Bingo();
