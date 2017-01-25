@@ -6,4 +6,4 @@ People watching is bingo time now!
 - npm start 
 
 #What it looks like
-![screenshot](https://raw.githubusercontent.com/jermbo/PeopleBingo/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/jermbo/PeopleBingo/master/screenshot.png)
