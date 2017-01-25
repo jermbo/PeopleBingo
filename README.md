@@ -2,7 +2,8 @@
 
 People watching is bingo time now!
 
-- npm setup
+#To Use it:
+- npm install
 - npm start 
 
 #What it looks like
