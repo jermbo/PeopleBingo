@@ -1,4 +1,4 @@
-#People Bingo
+# People Bingo
 
 People watching is bingo time now!
 
@@ -6,5 +6,5 @@ People watching is bingo time now!
 - npm install
 - npm start 
 
-#What it looks like
+## What it looks like
 ![screenshot](https://raw.githubusercontent.com/jermbo/PeopleBingo/master/screenshot.png)
